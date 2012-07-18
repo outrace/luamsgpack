@@ -7,8 +7,8 @@ Another msgpack lua binding<br/>
 install
 ==========
 现在编译时候的lua路径是用的<br/>
-#include <luajit-2.0/lua.h><br/>
-#include <luajit-2.0/lauxlib.h><br/>
+\#include <luajit-2.0/lua.h><br/>
+\#include <luajit-2.0/lauxlib.h><br/>
 如果你的路径不一样，请修改一下luamsg.h的文件。<br/>
 gcc luamsg.c -fPIC -shared -lmsgpack -o msgpack.so<br/>
 cp msgpack.so /usr/local/lib/lua/5.1/<br/>
