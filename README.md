@@ -6,12 +6,12 @@ Another msgpack lua binding<br/>
 
 example
 ==========
-local msgpack = require("msgpack")
-local data = {
-   key1="val1",key2={"a","b"},key3=false,key4=123,key5={k1="v1",k2="v2"},key6="中1文222dd#$#$#VD("
-}
-local tmp = msgpack.lua2msg(data) --将lua的map类型的table转成msgpack格式
-local ret = msgpack.msg2lua(tmp)  --将上面的map类型的对象转成lua的table
+local msgpack = require("msgpack")<br/>
+local data = {<br/>
+   key1="val1",key2={"a","b"},key3=false,key4=123,key5={k1="v1",k2="v2"},key6="中1文222dd#$#$#VD("<br/>
+}<br/>
+local tmp = msgpack.lua2msg(data) --将lua的map类型的table转成msgpack格式<br/>
+local ret = msgpack.msg2lua(tmp)  --将上面的map类型的对象转成lua的table<br/>
 
 author
 ==========
