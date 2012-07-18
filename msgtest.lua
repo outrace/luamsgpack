@@ -1,6 +1,6 @@
 local msgpack = require("msgpack")
 local data = {
-   key1="val1",key2={"a","b"},key3=false,key4=123,key5={k1="v1",k2="v2"},key6="ÖÐ1ÎÄ222dd#$#$#VD("
+   key1="val1",key2={"a","b"},key3=false,key4=123,key5={k1="v1",k2="v2"},key6="ä¸­1æ–‡222dd#$#$#VD("
 }
 local tmp = msgpack.lua2msg(data)
 local ret = msgpack.msg2lua(tmp)
